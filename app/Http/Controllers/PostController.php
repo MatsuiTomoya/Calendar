@@ -10,14 +10,17 @@ class PostController extends Controller
 {
     public function top(Schedule $schedule)
     {
+        
         return view('top')->with(['schedules' => $schedule->get()]);
     }
     
-    public function my_page(User $user, Schedule $schedule)
+    public function my_page(User $user)
     {
         $id = Auth::id();
         $user = DB::table('users')->find($id);
-        $schedule = DB::table('schedules')->where('user_id', $id)->get();
+        $schedule = Schedule::where('user_id', $id)->get();
+   
+        
         return view('my_page', ['my_user' => $user], ['my_schedules' => $schedule]);
     }
 }

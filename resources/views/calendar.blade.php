@@ -12,8 +12,10 @@
     </head>
     <body>
         <div id='calendar'></div>
+        @csrf
+        @method('DELETE')
         <script src="{{ mix('js/calendar.js') }}"></script>
-        <div class="back">[<a href="/">トップに戻る</a>]</div>
+        <div class="back" style="color:blue; text-decoration:underline;">[<a href="/">トップに戻る</a>]</div>
     </body>
 </html>
 @endsection
