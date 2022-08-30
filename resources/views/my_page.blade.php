@@ -12,40 +12,43 @@
         <title>マイページ画面</title>
     </head>
     <body>
-        <h1>マイページ画面</h1>
+        <h1 style="text-align:center; text-decoration:underline double;">共有パソコン予約管理システム</h1>
+        <h2 style="text-decoration:underline">マイページ画面</h2>
         <form action="/" method="">
             @csrf
-            <h2>お客様情報</h2>
-            <div class="name">
-                <p>氏名</p>
-                <p class = 'name'>{{ $my_user->name }}</p>
+            <h3>【お客様情報】</h3>
+            <div style="border:dotted; border-radius:8px; display:inline-block; background-color:whitesmoke">
+                <div class="name">
+                    <p class = 'name'>名前：{{ $my_user->name }}</p>
+                </div>
+                <div class="email">
+                    <p class = 'email'>Email adress：{{ $my_user->email }}</p>
+                </div>
             </div>
-            <div class="email">
-                <p>E-mail adress</p>
-                <p class = 'email'>{{ $my_user->email }}</p>
-            </div>
-            <h2>現在の予約</h2>
+            <br>
+            <br>
+            <h3>【現在の予約】</h3>
             @foreach ($my_schedules as $my_schedule)
-            <div class="title">
-                <p>タイトル</p>
-                <p class = 'title'>{{ $my_schedule->event_name }}</p>
+            <div style="border:dotted; border-radius:8px; display:inline-block; background-color:whitesmoke">
+                <div class="title">
+                    <p class = 'title'>イベント名：{{ $my_schedule->event_name }}</p>
+                </div>
+                <div class="body">
+                    <p class = 'body'>備考：{{ $my_schedule->body }}</p>
+                </div>
+                <div class="start_date">
+                    <p class = 'title'>開始日時：{{ $my_schedule->start_date->format('Y-m-d G:i') }}</p>
+                </div>
+                <div class="end_date">
+                    <p class = 'end_date'>終了日時：{{ $my_schedule->end_date->format('Y-m-d G:i') }}</p>
+                </div>
             </div>
-             <div class="body">
-                <p>内容</p>
-                <p class = 'body'>{{ $my_schedule->body }}</p>
-            </div>
-            <div class="start_date">
-                <P>開始日時</P>
-                <p class = 'start_date'>{{ $my_schedule->start_date }}</p>
-            </div>
-              <div class="end_date">
-                <P>終了日時</P>
-                <p class = 'end_date'>{{ $my_schedule->end_date }}</p>
-            </div>
+            <br>
+            <br>
             @endforeach
         </form>
         <br>
-        <div class="back">[<a href="/">Topに戻る</a>]</div>
+        <div class="back" style="color:blue; text-decoration:underline;">[<a href="/">Topに戻る</a>]</div>
     </body>
 </html>
 @endsection

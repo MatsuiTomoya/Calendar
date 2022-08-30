@@ -19,11 +19,13 @@ class ScheduleController extends Controller
      */
     public function scheduleAdd(Request $request, User $user)
     {
+        logger($request->all());
         // バリデーション
         $request->validate([
             'start_date' => 'required|integer',
             'end_date' => 'required|integer',
             'event_name' => 'required|max:32',
+            'body' => 'required|max:100',
         ]);
 
         // 登録処理
@@ -64,7 +66,7 @@ class ScheduleController extends Controller
                 'end_date as end',
                 'event_name as title',
                 'body as body',
-                'user_id as id'
+                'id as id'
             )
             // FullCalendarの表示範囲のみ表示
             ->where('end_date', '>', $start_date)
@@ -72,7 +74,7 @@ class ScheduleController extends Controller
             ->get();
     }
     
-    public function scheduleDelete(Schedule $schedule, Request $request)
+     public function scheduleDelete(Schedule $schedule, Request $request)
     {
         $schedule->delete();
         return redirect('/');
