@@ -31,16 +31,15 @@ Route::post('/schedule-get', [ScheduleController::class, 'scheduleGet'])->name('
 // イベント削除処理
 Route::post('/schedule-delete/{schedule}', [ScheduleController::class, 'scheduleDelete'])->name('schedule-delete');
 
+Route::get('/calendar', function () {
+    return view('calendar');
 });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/calendar', function () {
-    return view('calendar');
 });
-
 
 Route::controller(PostController::class)->group(function () {
     Route::get('/', 'top');

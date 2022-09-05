@@ -11,13 +11,13 @@
         <link rel="stylesheet" href="/css/app.css">
         <title>マイページ画面</title>
     </head>
-    <body>
+    <body style="margin:10px">
         <h1 style="text-align:center; text-decoration:underline double;">共有パソコン予約管理システム</h1>
         <h2 style="text-decoration:underline">マイページ画面</h2>
         <form action="/" method="">
             @csrf
             <h3>【お客様情報】</h3>
-            <div style="border:dotted; border-radius:8px; display:inline-block; background-color:whitesmoke">
+            <div style="border:dotted; border-radius:8px; display:inline-block; background-color:whitesmoke; padding:10px">
                 <div class="name">
                     <p class = 'name'>名前：{{ $my_user->name }}</p>
                 </div>
@@ -29,7 +29,7 @@
             <br>
             <h3>【現在の予約】</h3>
             @foreach ($my_schedules as $my_schedule)
-            <div style="border:dotted; border-radius:8px; display:inline-block; background-color:whitesmoke">
+            <div style="border:dotted; border-radius:8px; display:inline-block; background-color:whitesmoke; padding:10px">
                 <div class="title">
                     <p class = 'title'>イベント名：{{ $my_schedule->event_name }}</p>
                 </div>

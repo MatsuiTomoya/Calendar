@@ -74,6 +74,7 @@ class ScheduleController extends Controller
             ->get();
     }
     
+    //イベント削除処理
      public function scheduleDelete(Schedule $schedule, Request $request)
     {
         $schedule->delete();

@@ -74,6 +74,7 @@ let calendar = new Calendar(calendarEl, {
             });
     },
     
+     //イベント削除処理の呼び出し
     eventClick: function(arg) {
             if (confirm('削除しますか？')) {
                 console.log(arg.event.id);
