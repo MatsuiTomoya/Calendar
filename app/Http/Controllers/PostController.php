@@ -11,7 +11,7 @@ class PostController extends Controller
     public function top(Schedule $schedule)
     {
         
-        return view('top')->with(['schedules' => $schedule->get()]);
+        return view('top');
     }
     
     public function my_page(User $user)
