@@ -33,9 +33,9 @@
         <div style="text-align:left">
             <div style="text-align:left; border:dotted; border-radius:8px; display:inline-block; background-color:whitesmoke; padding:10px">
                 <h3>【予約登録の仕方】</h3>
-                <div>1.予約管理画面に行く</div>
-                <div>2.weekボタンを押して希望の日時の範囲をドラッグして選択する</div>
-                <div>3.イベント名、備考を入力する</div>
+                <div>1.予約管理画面に行きます</div>
+                <div>2.weekボタンを押して希望の日時の範囲をドラッグして選択します</div>
+                <div>3.イベント名、備考を入力します</div>
             </div>
         </div>
         <br>
@@ -43,8 +43,8 @@
         <div style="text-align:left">
             <div style="text-align:left; border:dotted; border-radius:8px; display:inline-block; background-color:whitesmoke; padding:10px">
                 <h3>【予約削除の仕方】</h3>
-                <div>1.予約管理画面に行く</div>
-                <div>2.削除したい予約をクリックして削除する</div>
+                <div>1.予約管理画面に行きます</div>
+                <div>2.削除したい予約をクリックして削除します</div>
             </div>
         </div>
         <br>
