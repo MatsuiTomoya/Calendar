@@ -21,6 +21,11 @@
   パスワード：85Takjbfro
 ・新規登録の場合は"新規登録の方はこちら"をクリックしてください。
 
+### ログイン画面
+![ログイン](https://user-images.githubusercontent.com/106688656/193541543-5d39c4d6-1612-4f1b-a58d-8695ba48ff61.PNG)
+### 新規登録画面
+![新規登録](https://user-images.githubusercontent.com/106688656/193541584-2cd1a8f5-bdb7-40a6-ae10-89cc09af382f.PNG)
+
 
 ### 予約の仕方
 １．トップ画面から予約管理画面に行きます。
