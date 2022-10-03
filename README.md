@@ -41,6 +41,11 @@
 <br>
 削除したい予約をクリックして削除することができます。
 
+### 月ごとの表示
+![Month](https://user-images.githubusercontent.com/106688656/193542628-3445278f-a114-4bc9-ad6b-745d344441f0.PNG)
+### 週ごとの表示
+![Week](https://user-images.githubusercontent.com/106688656/193542642-045af3fc-5bff-4425-9084-8c60db7f8d10.PNG)
+
 ### マイページ
 マイページはトップ画面に左上のリンクから行くことができ、自身の既にしてある予約内容を確認することができます。
 ![マイページ](https://user-images.githubusercontent.com/106688656/193542230-2be635f2-6ac1-43b5-a32d-cac326c744aa.PNG)
