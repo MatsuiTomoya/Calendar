@@ -7,7 +7,36 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Dependency
+使用言語：Javascript PHP Vue
+フレームワーク：Larrabel9
+
+## Usage
+まず初めにリンクからトップ画面にいきます。トップ画面にはこのアプリの使用方法や注意事項を記載しております。
+次にトップ画面の左上のリンクからログインします。登録がまだの方は新規登録してログインします。
+
+
+予約の仕方
+トップ画面から予約管理画面に行きます。
+weekボタンを押して、希望の予約日時の範囲をドラッグして選択します。
+予約のイベント名、備考を入力します。ただ、備考は他者には見えないようになっています。
+これで予約はできました。
+
+予約の削除の仕方
+トップ画面から予約管理画面に行きます。
+削除したい予約をクリックして削除することができます。
+
+マイページはトップ画面に左上のリンクから行くことができ、自身の既にしてある予約内容を確認することができます。
+
+## License
+This software is released under the MIT License, see LICENSE.
+
+## Authors
+Matsui Tomoya
+
+## References
+https://fullcalendar.io/
+https://readouble.com/laravel/
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
