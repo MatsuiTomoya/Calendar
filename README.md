@@ -1,12 +1,8 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-
+ ![トップ画面](https://user-images.githubusercontent.com/106688656/193538445-ebaa86ba-fe77-4352-895a-4fc08ed8277e.PNG)
 
 
 ## 概要
 このアプリは１台の共有しているパソコンに対して予約を登録、管理できるものです。カレンダー画面から予約をすることができ他の予約状況が視覚的にわかった上で予約をすることができます。また、自身の予約した内容はマイページから確認することができます。
-
-トップ画像
 
 ## 使用言語、環境
 使用言語：Javascript、PHP、Vue
@@ -23,9 +19,8 @@
   メールアドレス：59rhbfjdjern2@gmail.com
 <br>
   パスワード：85Takjbfro
-
-
 ・新規登録の場合は"新規登録の方はこちら"をクリックしてください。
+
 
 ### 予約の仕方
 １．トップ画面から予約管理画面に行きます。
